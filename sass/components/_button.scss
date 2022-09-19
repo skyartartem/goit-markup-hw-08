@@ -1,0 +1,26 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 200px;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.88;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--text-color-on-drk-bgrd);
+  border-radius: 4px;
+  transition: opacity var(--duration-cubic), 
+    transform var(--duration-cubic), 
+    box-shadow var(--duration-cubic);
+    
+ &:hover,
+ &:focus {
+    opacity: 0.95;
+    transform: translate(-1px, -1px);
+    box-shadow: 4px 4px 4px rgba(125, 125, 125, 0.5);
+ }
+}

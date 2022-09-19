@@ -1,0 +1,22 @@
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  transition: text-shadow var(--duration-cubic);
+  &:hover,
+  &:focus {
+    text-shadow: 0px 0px 10px rgba(125, 125, 125, 0.5);
+  }
+}
+
+.logo_black {
+  color: var(--secondary-text-color);
+}
+/* Доповнює стилізацію нижнього логотипа */
+
+.logo_white {
+  color: var(--text-color-on-drk-bgrd);
+}

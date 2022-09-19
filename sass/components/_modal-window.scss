@@ -1,0 +1,46 @@
+/* Стилізація модального вікна */
+
+.modal-window {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background: var(--main-bgrnd-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform var(--duration-cubic);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+
+
+.close-but {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  background-color: var(--main-bgrnd-color);
+  color: var(--secondary-text-color);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.icon-cros {
+  transition: fill var(--duration-cubic);
+
+  .close-but:hover &, 
+  .close-but:focus & {
+    fill: var(--accent-color);
+  }
+
+}
+

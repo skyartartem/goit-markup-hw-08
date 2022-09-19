@@ -1,0 +1,66 @@
+.benefits {
+  padding-bottom: 0px;
+}
+
+
+.benefits__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits__title {
+  color: var(--secondary-text-color);
+  font-size: 1em;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.benefits__item {
+  width: calc( ( 100% - 90px ) / 4 );
+  
+  &::before {
+    content: "";
+    display: block;
+    margin-bottom: 30px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
+
+/* Додаю іконки в розділ переваги */
+
+$icons: "antenna", "clock", "diagram", "astronaut";
+
+
+@include generateIcons($icons);
+
+// .icon-antenna{
+//   &::before {
+//     background-image: url(../images/svg/antenna.svg);
+//   }
+// }
+
+// .icon-clock{
+//    &::before {
+//     background-image: url(../images/svg/clock.svg);
+//   }
+// }
+
+// .icon-diagram{
+//   &::before {
+//     background-image: url(../images/svg/diagram.svg);
+//   }
+// }
+
+// .icon-astronaut{
+//   &::before {
+//     background-image: url(../images/svg/astronaut.svg);
+//   }
+// }
+

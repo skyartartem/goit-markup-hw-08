@@ -1,0 +1,30 @@
+/* Приберає зайві маржини і падінги в текстових блоках*/
+
+h1, h2, h3, h4, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Приберає підкреслення з лінків*/
+
+.links {
+    text-decoration: none;
+}
+
+/* Приберає крапки в списках та падинги */
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Приберає margin знизу картинки */
+
+img {
+  display: block;
+}
+
+button {
+    cursor: pointer;
+}
