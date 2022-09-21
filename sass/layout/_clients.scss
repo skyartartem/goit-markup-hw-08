@@ -1,5 +1,7 @@
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+  // justify-content: space-between;
   gap: 30px; 
 }
 
@@ -7,7 +9,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
+  @media screen and (min-width:768px ) {
+    width: 226px;
+  }
+  @media screen and (min-width:1199px ) {
+    width: 170px;
+  }
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;

@@ -3,11 +3,13 @@
 .header { 
   border-bottom: 1px solid #ECECEC;
  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  // .container {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
+
+
 }
 .menu-list__link{
   &.current{
@@ -25,28 +27,28 @@
 }
 
 .navigation {
-  display: flex;
-  align-items: center;  
+  // display: flex;
+  // align-items: center;  
 
   .logo {
-    margin-right: 93px;
+    // margin-right: 93px;
   } 
 }
 
 .menu-list {
-  display: flex;
+  // display: flex;
 }
 
 
 .menu-list__item:not(:last-child) {
-  margin-right: 30px;
+  // margin-right: 30px;
 }
 
 .menu-list__link {
   position: relative;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // display: block;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -67,7 +69,7 @@
 /* Стилізація контактів в капелюсі */
 
 .contact-list {
-  display: flex;
+  // display: flex;
   .contact-list__item:not(:last-child) {
    margin-right: 30px;
   }

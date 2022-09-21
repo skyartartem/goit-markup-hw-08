@@ -2,10 +2,10 @@
   background-color: var(--drk-bgrd-color);
   padding: 60px 0;
 
-  .container {
-    display: flex;
-    align-items: baseline;
-  }
+  // .container {
+  //   display: flex;
+  //   align-items: baseline;
+  // }
 
   
   .logo {
@@ -27,7 +27,6 @@
 }
 
 .adrs-list__link {
-  // display: inline-block;
   font-style: normal;
   color: var(--text-color-on-drk-bgrd);
   transition: color var(--duration-cubic);
@@ -53,7 +52,6 @@
 
 
 .adrs-list__tel {
-  /* display: inline-block; */
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--duration-cubic);
@@ -86,12 +84,12 @@
 .footer {
   .social-item__link {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 44px;
     width: 44px;
     background-color: rgba(68, 69, 78, 1);
     border-radius: 50%;
-    justify-content: center;
-    align-items: center;
     transition: background-color var(--duration-cubic);
   }
 }

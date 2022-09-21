@@ -1,4 +1,7 @@
 // .what {background-color: aqua;}
+@media screen and (max-width: 1200px) {
+  .what {display: none;} 
+}
 
 .what-we-do-list {
   display: flex;

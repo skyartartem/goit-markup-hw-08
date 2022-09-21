@@ -5,10 +5,15 @@
 
 .benefits__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  // justify-content: space-between;
+  gap: 30px;
 }
 
 .benefits__title {
+  @media screen and (max-width:768px ) {
+    text-align: center;
+  }
   color: var(--secondary-text-color);
   font-size: 1em;
   line-height: 1.14;
@@ -17,8 +22,14 @@
 }
 
 .benefits__item {
-  width: calc( ( 100% - 90px ) / 4 );
+  width:100%;
   
+  @media screen and (min-width:768px ) {
+    width: calc( ( 100% - 30px ) / 2 );
+  }
+  @media screen and (min-width:1199px ) {
+    width: calc( ( 100% - 90px ) / 4 );
+  }
   &::before {
     content: "";
     display: block;
