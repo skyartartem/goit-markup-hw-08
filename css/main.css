@@ -60,8 +60,14 @@ button {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -399,8 +405,8 @@ button {
 
 .hero {
   background-color: var(--drk-bgrd-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgrnd-img.jpg);
-  max-width: 1600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgrnd-img-480.jpg);
+  width: 480px;
   margin: 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
@@ -410,21 +416,42 @@ button {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgrnd-img-768.jpg);
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgrnd-img-1600.jpg);
+    max-width: 1600px;
+  }
+}
 
 .hero__title {
-  max-width: 696px;
+  max-width: 360px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
-.benefits {
-  padding-bottom: 0px;
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-bottom: 0px;
+  }
 }
 
 .benefits__list {
@@ -519,6 +546,16 @@ button {
 
 .team {
   background-color: #f5f4fa;
+}
+@media screen and (min-width: 768px) {
+  .team {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    width: 768px;
+  }
 }
 .team .team-list__item {
   background-color: var(--main-bgrnd-color);

@@ -3,9 +3,22 @@
   background-image: linear-gradient(to right,
     rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)),
-  url(../images/bgrnd-img.jpg);
-
+  url(../images/bgrnd-img-480.jpg);
+  width: 480px;
+  @media screen and (min-width:768px) {
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)),
+  url(../images/bgrnd-img-768.jpg);
+  width: 768px;
+  }
+  @media screen and (min-width:1200px) {
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)),
+  url(../images/bgrnd-img-1600.jpg);
   max-width: 1600px;
+  }
   margin: 0 auto;
   background-size:cover;
   background-repeat:no-repeat;
@@ -17,13 +30,22 @@
 }
 
 .hero__title {
-  max-width: 696px;
+  max-width: 360px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px){
+  .hero__title { 
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36; 
+  }
+
 }
