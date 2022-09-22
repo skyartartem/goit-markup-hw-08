@@ -4,13 +4,13 @@
     rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)),
   url(../images/bgrnd-img-480.jpg);
-  width: 480px;
+  max-width: 480px;
   @media screen and (min-width:768px) {
     background-image: linear-gradient(to right,
     rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)),
   url(../images/bgrnd-img-768.jpg);
-  width: 768px;
+  max-width: 768px;
   }
   @media screen and (min-width:1200px) {
     background-image: linear-gradient(to right,
