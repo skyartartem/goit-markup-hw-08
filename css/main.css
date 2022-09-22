@@ -72,7 +72,6 @@ button {
 
 .container {
   width: 100%;
-  margin: 0;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -80,7 +79,6 @@ button {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
   }
@@ -406,6 +404,8 @@ button {
 }
 
 .hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: var(--drk-bgrd-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgrnd-img-480.jpg);
   max-width: 480px;
@@ -415,8 +415,11 @@ button {
   background-position: center;
   color: var(--text-color-on-drk-bgrd);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgrnd-img-480@2x.jpg);
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -424,10 +427,23 @@ button {
     max-width: 768px;
   }
 }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgrnd-img-768@2x.jpg);
+    max-width: 768px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgrnd-img-1600.jpg);
     max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgrnd-img-1600@2x.jpg);
   }
 }
 
