@@ -166,23 +166,61 @@
           <ul class="list what-we-do-list">
 
             <li class="what-we-do-list__item">
-              <img src="./images/img-01.jpg" alt="codding process" width="370" />
+              
+              <picture>
+                <source
+                  srcset="./images/what-img/webp/img-01.webp 1x, ./images/what-img/webp/img-01@2x.webp 2x"
+                  type="image/webp"
+                />
+                <img 
+                srcset="./images/what-img/img-01.jpg 1x, ./images/what-img/img-01@2x.jpg 2x"
+                src="./images/what-img/img-01.jpg" alt="процес кодування" 
+                />
+              </picture> 
               <p class="what-we-do-list__description">
                 Десктопні додатки
               </p>
-            </li>
+                     
+              
 
-            <li class="what-we-do-list__item"><img src="./images/img-02.jpg" alt="maketing" width="370" />
-              <p class="what-we-do-list__description">
-                Мобільні додатки
-              </p>
             </li>
 
             <li class="what-we-do-list__item">
-              <img src="./images/img-03.jpg" alt="color matching" width="370" />
+              
+              <picture>
+                <source
+                  srcset="./images/what-img/webp/img-02.webp 1x, ./images/what-img/webp/img-02@2x.webp 2x"
+                  type="image/webp"
+                />
+                <img 
+                srcset="./images/what-img/img-02.jpg 1x, ./images/what-img/img-02@2x.jpg 2x"
+                src="./images/what-img/img-02.jpg" alt="вібір дизайну макета" 
+                />
+              </picture> 
+
+              <p class="what-we-do-list__description">
+                Мобільні додатки
+              </p>
+
+            </li>
+
+            <li class="what-we-do-list__item">
+
+              <picture>
+                <source
+                  srcset="./images/what-img/webp/img-03.webp 1x, ./images/what-img/webp/img-03@2x.webp 2x"
+                  type="image/webp"
+                />
+                <img 
+                srcset="./images/what-img/img-03.jpg 1x, ./images/what-img/img-03@2x.jpg 2x"
+                src="./images/what-img/img-03.jpg" alt="вибір кольору" 
+                />
+              </picture>
+
               <p class="what-we-do-list__description">
                 Дизайнерські рішення
               </p>
+
             </li>
           </ul>
 
@@ -204,11 +242,43 @@
             <!-- 01 Ігор Дем'яненко -->
 
           <li class="team-list__item">
-            <img class="photo-pisition"
-              src="./images/photo-01.jpg"
+            <picture>
+              <source
+                srcset="./images/team-img/webp/photo-01-desktop.webp 1x, ./images/team-img/webp/photo-01-desktop@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
+               />
+               <source
+                srcset="./images/team-img/photo-01-desktop.jpg 1x, ./images/team-img/photo-01-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)"
+               />
+               <source
+                srcset="./images/team-img/webp/photo-01-tablet.webp 1x, ./images/team-img/webp/photo-01-tablet@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+               />
+               <source
+                srcset="./images/team-img/photo-01-tablet.jpg 1x, ./images/team-img/photo-01-tablet@2x.jpg 2x"
+                media="(min-width: 768px)"
+               />
+               <source
+                srcset="./images/team-img/webp/photo-01-mobile.webp 1x, ./images/team-img/webp/photo-01-mobile@2x.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp"
+               />
+               <source
+                srcset="./images/team-img/photo-01-mobile.jpg 1x, ./images/team-img/photo-01-mobile@2x.jpg 2x"
+                media="(max-width: 767px)"
+               />
+               <img src="./images/team-img/photo-01-mobile.jpg" alt="Product Designer portrait"
+               />
+           </picture>
+            <!-- <img 
+              srcset="./images/team-img/photo-01-desktop.jpg 1x, ./images/team-img/photo-01-desktop@2x.jpg 2x"
+              src="./images/team-img/photo-01-desktop.jpg"
               alt="Product Designer portrait"
               width="270"
-             />
+             /> -->
             <div class="position-wrapper">
               <h3 class="name-position">Ігор Дем'яненко</h3>
             <p class="position">Product Designer</p>
@@ -260,11 +330,42 @@
             <!-- 02 Ольга Рєпіна -->
 
           <li class="team-list__item">
-            <img class="photo-pisition"
-              src="./images/photo-02.jpg"
+            <picture>
+              <source
+                srcset="./images/team-img/webp/photo-02-desktop.webp 1x, ./images/team-img/webp/photo-02-desktop@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
+               />
+               <source
+                srcset="./images/team-img/photo-02-desktop.jpg 1x, ./images/team-img/photo-02-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)"
+               />
+               <source
+                srcset="./images/team-img/webp/photo-02-tablet.webp 1x, ./images/team-img/webp/photo-02-tablet@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+               />
+               <source
+                srcset="./images/team-img/photo-02-tablet.jpg 1x, ./images/team-img/photo-02-tablet@2x.jpg 2x"
+                media="(min-width: 768px)"
+               />
+               <source
+                srcset="./images/team-img/webp/photo-02-mobile.webp 1x, ./images/team-img/webp/photo-02-mobile@2x.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp"
+               />
+               <source
+                srcset="./images/team-img/photo-02-mobile.jpg 1x, ./images/team-img/photo-02-mobile@2x.jpg 2x"
+                media="(max-width: 767px)"
+               />
+               <img src="./images/team-img/photo-02-mobile.jpg" alt="Frontend Developer portrait"
+               />
+           </picture>
+            <!-- <img 
+              src="./images/team-img/photo-02-desktop.jpg"
               alt="Frontend Developer portrait"
               width="270"
-            />
+            /> -->
             <div class="position-wrapper">
               <h3 class="name-position">Ольга Рєпіна</h3>
             <p class="position">Frontend Developer</p>
@@ -316,11 +417,42 @@
             <!-- 03  Микола Тарасов -->
 
           <li class="team-list__item">
-            <img class="photo-pisition"
-              src="./images/photo-03.jpg"
+            <picture>
+              <source
+                srcset="./images/team-img/webp/photo-03-desktop.webp 1x, ./images/team-img/webp/photo-03-desktop@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
+               />
+               <source
+                srcset="./images/team-img/photo-03-desktop.jpg 1x, ./images/team-img/photo-03-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)"
+               />
+               <source
+                srcset="./images/team-img/webp/photo-03-tablet.webp 1x, ./images/team-img/webp/photo-03-tablet@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+               />
+               <source
+                srcset="./images/team-img/photo-03-tablet.jpg 1x, ./images/team-img/photo-03-tablet@2x.jpg 2x"
+                media="(min-width: 768px)"
+               />
+               <source
+                srcset="./images/team-img/webp/photo-03-mobile.webp 1x, ./images/team-img/webp/photo-03-mobile@2x.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp"
+               />
+               <source
+                srcset="./images/team-img/photo-03-mobile.jpg 1x, ./images/team-img/photo-03-mobile@2x.jpg 2x"
+                media="(max-width: 767px)"
+               />
+               <img src="./images/team-img/photo-03-mobile.jpg" alt="Marketing manager portrait"
+               />
+           </picture>
+            <!-- <img 
+              src="./images/team-img/photo-03-desktop.jpg"
               alt="Marketing manager portrait"
               width="270"
-            />
+            /> -->
             <div class="position-wrapper">
               <h3 class="name-position">Микола Тарасов</h3>
             <p class="position">Marketing</p>
@@ -372,11 +504,42 @@
             <!-- 04 Михайло Єрмаков -->
 
           <li class="team-list__item">
-            <img class="photo-pisition"
-              src="./images/photo-04.jpg"
+            <picture>
+              <source
+                srcset="./images/team-img/webp/photo-04-desktop.webp 1x, ./images/team-img/webp/photo-04-desktop@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
+               />
+               <source
+                srcset="./images/team-img/photo-04-desktop.jpg 1x, ./images/team-img/photo-04-desktop@2x.jpg 2x"
+                media="(min-width: 1200px)"
+               />
+               <source
+                srcset="./images/team-img/webp/photo-04-tablet.webp 1x, ./images/team-img/webp/photo-04-tablet@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+               />
+               <source
+                srcset="./images/team-img/photo-04-tablet.jpg 1x, ./images/team-img/photo-04-tablet@2x.jpg 2x"
+                media="(min-width: 768px)"
+               />
+               <source
+                srcset="./images/team-img/webp/photo-04-mobile.webp 1x, ./images/team-img/webp/photo-04-mobile@2x.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp"
+               />
+               <source
+                srcset="./images/team-img/photo-04-mobile.jpg 1x, ./images/team-img/photo-04-mobile@2x.jpg 2x"
+                media="(max-width: 767px)"
+               />
+               <img src="./images/team-img/photo-04-mobile.jpg" alt="Product Designer portrait"
+               />
+           </picture>
+            <!-- <img 
+              src="./images/team-img/photo-04-desktop.jpg"
               alt="UI Designer portrait"
               width="270"
-            />
+            /> -->
            <div class="position-wrapper">
              <h3 class="name-position">Михайло Єрмаков</h3>
             <p class="position">UI Designer</p>

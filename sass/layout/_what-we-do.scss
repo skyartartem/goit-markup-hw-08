@@ -3,31 +3,33 @@
   .what {display: none;} 
 }
 
-.what-we-do-list {
-  display: flex;
-  justify-content: space-between;
-}
+@media screen and (min-width: 1200px) {
+  .what-we-do-list {
+    display: flex;
+    justify-content: space-between;
+  }
 
- 
-.what-we-do-list__item {
-  position: relative;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+  
+  .what-we-do-list__item {
+    position: relative;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+      0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 
 
-.what-we-do-list__description {
-  position: absolute;
-  display:block;
-  text-align: center;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  width: 100%;
-  background-color: rgba(47, 48, 58, 0.8);
-  bottom: 0;
-  line-height: 1.14;
-  font-weight: 700;
-  color: var(--text-color-on-drk-bgrd);
-  text-transform: uppercase;
+  .what-we-do-list__description {
+    position: absolute;
+    display:block;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    bottom: 0;
+    line-height: 1.14;
+    font-weight: 700;
+    color: var(--text-color-on-drk-bgrd);
+    text-transform: uppercase;
+  }
 }
