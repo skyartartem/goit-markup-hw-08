@@ -27,22 +27,21 @@
   <body>
     <!-- Капелюх -->
 
-        <header class="header">
+    <header class="header">
 
         <!-- Контейнер хедера -->
 
         <div class="container">
-  
 
-          <!-- Логотип чорний -->
+            <nav class="navigation">
+        
+                <!-- Логотип чорний -->
 
                 <a class="logo links" href="./index.html"
                 >Web<span class="logo_black">Studio</span></a
-                >
-
-            <nav class="navigation">
-              
-                  <!-- Навігація -->
+              >
+            
+                <!-- Навігація -->
 
                 <ul class="menu-list list">
                   <li class="menu-list__item">
@@ -59,7 +58,7 @@
 
                   <!-- Контакти в капелюсі чомусь окремо від навігаціі -->
 
-                <ul class="list contact-list">
+            <ul class="list contact-list">
                   <li  class="contact-list__item">
                   <a class="header-contact links" href="mailto:info@devstudio.com"
                   >
@@ -81,8 +80,14 @@
                         +38 096 111 11 11</a
                       >
                   </li>
-                </ul>
+            </ul>
+        <button type="button" class="burger-btn">
+          <svg class="burger-icon">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>   
         </div>
+        
     </header>
 
     <main>
@@ -128,11 +133,42 @@
           <li class="project-card">
             <a class="project-card_link links" href=""
               ><div class="img-project">
-                <img 
+                <picture>
+                  <source
+                    srcset="./images/project-img/webp/project-img-01-desktop.webp 1x, ./images/project-img/webp/project-img-01-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-desktop.jpg 1x, ./images/project-img/project-img-01-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-tablet.webp 1x, ./images/project-img/webp/project-img-01-tablet@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-tablet.jpg 1x, ./images/project-img/project-img-01-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-mobile.webp 1x, ./images/project-img/webp/project-img-01-mobile@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-mobile.jpg 1x, ./images/project-img/project-img-01-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                   />
+                   <img src="./images/project-img/project-img-01-mobile.jpg" alt="Ноутбук"
+                   />
+               </picture>
+                <!-- <img 
                 src="./images/project-img/project-img-01-desktop.jpg"
                 alt="Ноутбук"
                 width="370"
-                />
+                /> -->
                 <div class="hoverer-overlay">
                   <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -150,11 +186,42 @@
             <a class="project-card_link links" href=""
               >
               <div class="img-project">
-              <img
+                <picture>
+                  <source
+                    srcset="./images/project-img/webp/project-img-01-desktop.webp 1x, ./images/project-img/webp/project-img-01-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-desktop.jpg 1x, ./images/project-img/project-img-01-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-tablet.webp 1x, ./images/project-img/webp/project-img-01-tablet@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-tablet.jpg 1x, ./images/project-img/project-img-01-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-mobile.webp 1x, ./images/project-img/webp/project-img-01-mobile@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-mobile.jpg 1x, ./images/project-img/project-img-01-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                   />
+                   <img src="./images/project-img/project-img-01-mobile.jpg" alt="Постер"
+                   />
+               </picture>
+              <!-- <img
                 src="./images/project-img/project-img-02-desktop.jpg"
                 alt="Постер"
                 width="370"
-              />
+              /> -->
               <div class="hoverer-overlay">
                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -172,11 +239,42 @@
             <a class="project-card_link links" href=""
               >
               <div class="img-project">
-              <img
+                <picture>
+                  <source
+                    srcset="./images/project-img/webp/project-img-01-desktop.webp 1x, ./images/project-img/webp/project-img-01-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-desktop.jpg 1x, ./images/project-img/project-img-01-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-tablet.webp 1x, ./images/project-img/webp/project-img-01-tablet@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-tablet.jpg 1x, ./images/project-img/project-img-01-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-mobile.webp 1x, ./images/project-img/webp/project-img-01-mobile@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-mobile.jpg 1x, ./images/project-img/project-img-01-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                   />
+                   <img src="./images/project-img/project-img-01-mobile.jpg" alt="Додаток"
+                   />
+               </picture>
+              <!-- <img
                 src="./images/project-img/project-img-03-desktop.jpg"
                 alt="Додаток"
                 width="370"
-              />
+              /> -->
               <div class="hoverer-overlay">
                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -194,11 +292,42 @@
             <a class="project-card_link links" href=""
               >
               <div class="img-project">
-              <img
+                <picture>
+                  <source
+                    srcset="./images/project-img/webp/project-img-01-desktop.webp 1x, ./images/project-img/webp/project-img-01-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-desktop.jpg 1x, ./images/project-img/project-img-01-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-tablet.webp 1x, ./images/project-img/webp/project-img-01-tablet@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-tablet.jpg 1x, ./images/project-img/project-img-01-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-mobile.webp 1x, ./images/project-img/webp/project-img-01-mobile@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-mobile.jpg 1x, ./images/project-img/project-img-01-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                   />
+                   <img src="./images/project-img/project-img-01-mobile.jpg" alt="Навушники"
+                   />
+               </picture>
+              <!-- <img
                 src="./images/project-img/project-img-04-desktop.jpg"
                 alt="Навушники"
                 width="370"
-              />
+              /> -->
                <div class="hoverer-overlay">
                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -216,11 +345,42 @@
             <a class="project-card_link links" href=""
               >
               <div class="img-project">
-              <img
+                <picture>
+                  <source
+                    srcset="./images/project-img/webp/project-img-01-desktop.webp 1x, ./images/project-img/webp/project-img-01-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-desktop.jpg 1x, ./images/project-img/project-img-01-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-tablet.webp 1x, ./images/project-img/webp/project-img-01-tablet@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-tablet.jpg 1x, ./images/project-img/project-img-01-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-mobile.webp 1x, ./images/project-img/webp/project-img-01-mobile@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-mobile.jpg 1x, ./images/project-img/project-img-01-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                   />
+                   <img src="./images/project-img/project-img-01-mobile.jpg" alt="Коробки"
+                   />
+               </picture>
+              <!-- <img
                 src="./images/project-img/project-img-05-desktop.jpg"
                 alt="Коробки"
                 width="370"
-              />
+              /> -->
                 <div class="hoverer-overlay">
                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -238,11 +398,42 @@
             <a class="project-card_link links" href=""
               >
               <div class="img-project">
-              <img
+                <picture>
+                  <source
+                    srcset="./images/project-img/webp/project-img-01-desktop.webp 1x, ./images/project-img/webp/project-img-01-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-desktop.jpg 1x, ./images/project-img/project-img-01-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-tablet.webp 1x, ./images/project-img/webp/project-img-01-tablet@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-tablet.jpg 1x, ./images/project-img/project-img-01-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-mobile.webp 1x, ./images/project-img/webp/project-img-01-mobile@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-mobile.jpg 1x, ./images/project-img/project-img-01-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                   />
+                   <img src="./images/project-img/project-img-01-mobile.jpg" alt="Монітор"
+                   />
+               </picture>
+              <!-- <img
                 src="./images/project-img/project-img-06-desktop.jpg"
                 alt="Монітор"
                 width="370"
-              />
+              /> -->
                 <div class="hoverer-overlay">
                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -260,11 +451,42 @@
           <li class="project-card">
             <a class="project-card_link links" href="">
               <div class="img-project">
-              <img
+                <picture>
+                  <source
+                    srcset="./images/project-img/webp/project-img-01-desktop.webp 1x, ./images/project-img/webp/project-img-01-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-desktop.jpg 1x, ./images/project-img/project-img-01-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-tablet.webp 1x, ./images/project-img/webp/project-img-01-tablet@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-tablet.jpg 1x, ./images/project-img/project-img-01-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-mobile.webp 1x, ./images/project-img/webp/project-img-01-mobile@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-mobile.jpg 1x, ./images/project-img/project-img-01-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                   />
+                   <img src="./images/project-img/project-img-01-mobile.jpg" alt="Журнал"
+                   />
+               </picture>
+              <!-- <img
                 src="./images/project-img/project-img-07-desktop.jpg"
                 alt="Журнал"
                 width="370"
-              />
+              /> -->
               <div class="hoverer-overlay">
                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -282,11 +504,42 @@
             <a class="project-card_link links" href=""
               >
               <div class="img-project">
-              <img
+                <picture>
+                  <source
+                    srcset="./images/project-img/webp/project-img-01-desktop.webp 1x, ./images/project-img/webp/project-img-01-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-desktop.jpg 1x, ./images/project-img/project-img-01-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-tablet.webp 1x, ./images/project-img/webp/project-img-01-tablet@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-tablet.jpg 1x, ./images/project-img/project-img-01-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-mobile.webp 1x, ./images/project-img/webp/project-img-01-mobile@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-mobile.jpg 1x, ./images/project-img/project-img-01-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                   />
+                   <img src="./images/project-img/project-img-01-mobile.jpg" alt="Цінник"
+                   />
+               </picture>
+              <!-- <img
                 src="./images/project-img/project-img-08-desktop.jpg"
                 alt="Цінник"
                 width="370"
-              />
+              /> -->
                 <div class="hoverer-overlay">
                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -304,11 +557,42 @@
             <a class="project-card_link links" href=""
               >
               <div class="img-project">
-              <img
+                <picture>
+                  <source
+                    srcset="./images/project-img/webp/project-img-01-desktop.webp 1x, ./images/project-img/webp/project-img-01-desktop@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-desktop.jpg 1x, ./images/project-img/project-img-01-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-tablet.webp 1x, ./images/project-img/webp/project-img-01-tablet@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-tablet.jpg 1x, ./images/project-img/project-img-01-tablet@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                   />
+                   <source
+                    srcset="./images/project-img/webp/project-img-01-mobile.webp 1x, ./images/project-img/webp/project-img-01-mobile@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                   />
+                   <source
+                    srcset="./images/project-img/project-img-01-mobile.jpg 1x, ./images/project-img/project-img-01-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                   />
+                   <img src="./images/project-img/project-img-01-mobile.jpg" alt="Лептоп"
+                   />
+               </picture>
+              <!-- <img
                 src="./images/project-img/project-img-09-desktop.jpg"
                 alt="Лептоп"
                 width="370"
-              />
+              /> -->
                 <div class="hoverer-overlay">
                 <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>

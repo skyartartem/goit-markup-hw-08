@@ -50,13 +50,13 @@
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+   gap: 30px;
 }
 
 
-.project-card {
-  margin: 15px;
-}
+// .project-card {
+//   margin: 15px;
+// }
 
 .img-project {
   position: relative;
@@ -107,9 +107,15 @@
   border-bottom: 1px solid var(--cards-border-color);
   padding: 20px 24px;
   border-radius: 0px 0px 4px 4px; 
+  
 }
 
 .name-project {
+  max-width: 304px;
+  @media screen and (max-width: 768px), (min-width: 1200px){
+    max-width: 322px;
+  }  
+ 
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 18px;
