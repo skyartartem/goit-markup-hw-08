@@ -7,7 +7,7 @@
   --text-color-on-drk-bgrd: #ffffff;
   --drk-bgrd-color: #2f303a;
   --cards-border-color: #eeeeee;
-  --duration-cubic: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -358,11 +358,17 @@ button {
 .header .burger-btn {
   display: block;
   background: transparent;
+  border: none;
   padding: 0;
 }
 .header .burger-icon {
+  display: block;
   width: 40px;
   height: 40px;
+  transition: fill var(--duration-cubic);
+}
+.header .burger-icon:hover, .header .burger-icon:focus {
+  fill: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -688,19 +694,29 @@ button {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .item-client {
+    width: calc((100% - 30px) / 2);
+  }
+}
 .item-client_link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   color: #AFB1B8;
   transition: box-shadow var(--duration-cubic), border-color var(--duration-cubic), color var(--duration-cubic);
+}
+@media screen and (min-width: 480px) {
+  .item-client_link {
+    width: 210px;
+  }
 }
 @media screen and (min-width: 768px) {
   .item-client_link {
@@ -725,49 +741,52 @@ button {
 .footer {
   background-color: var(--drk-bgrd-color);
   padding: 60px 0;
+  /* ===== стилізація адресного блоку ===== */
+  /* === Стилізація блока соцмереж === */
+  /* === Стилізація іконок соцмереж === */
+  /* ====== стилізація форми підписки ===== */
+}
+.footer .container {
+  text-align: center;
 }
 .footer .logo {
   display: inline-block;
   margin-bottom: 20px;
 }
 .footer .wrapper-adrs {
-  margin-right: 70px;
+  margin-bottom: 60px;
 }
-
-/* ===== стилізація адресного блоку ===== */
-.adrs-item:not(:last-child) {
+.footer .wrapper-social {
+  margin-bottom: 60px;
+}
+.footer .adrs-item:not(:last-child) {
   margin-bottom: 9px;
 }
-
-.adrs-list__link {
+.footer .adrs-list__link {
   font-style: normal;
   color: var(--text-color-on-drk-bgrd);
   transition: color var(--duration-cubic);
 }
-.adrs-list__link:hover, .adrs-list__link:focus {
+.footer .adrs-list__link:hover, .footer .adrs-list__link:focus {
   color: var(--accent-color);
 }
-
-.adrs-list__mail {
+.footer .adrs-list__mail {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--duration-cubic);
 }
-.adrs-list__mail:hover, .adrs-list__mail:focus {
+.footer .adrs-list__mail:hover, .footer .adrs-list__mail:focus {
   color: var(--accent-color);
 }
-
-.adrs-list__tel {
+.footer .adrs-list__tel {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--duration-cubic);
 }
-.adrs-list__tel:hover, .adrs-list__tel:focus {
+.footer .adrs-list__tel:hover, .footer .adrs-list__tel:focus {
   color: var(--accent-color);
 }
-
-/* === Стилізація блока соцмереж === */
-.social-set-title {
+.footer .social-set-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -776,13 +795,10 @@ button {
   color: var(--text-color-on-drk-bgrd);
   margin-bottom: 20px;
 }
-
-/* === Стилізація іконок соцмереж === */
-.social-set {
+.footer .social-set {
   display: flex;
   gap: 10px;
 }
-
 .footer .social-item__link {
   display: flex;
   justify-content: center;
@@ -793,7 +809,6 @@ button {
   border-radius: 50%;
   transition: background-color var(--duration-cubic);
 }
-
 .footer .social-item__link:hover, .footer .social-item__link:focus {
   background-color: rgb(29, 155, 240);
   /* колір твітера (як що прибрати нижні ховери і поставити колір акцент буде по макету*/
@@ -814,27 +829,18 @@ button {
 .footer .linkedin:focus {
   background-color: #0a66c2;
 }
-
-.instagram-wraper {
+.footer .instagram-wraper {
   border-radius: 50%;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
-
-.facebook-wraper {
+.footer .facebook-wraper {
   border-radius: 50%;
   background-image: linear-gradient(to bottom, #19aefe, #0062e0);
 }
-
-.wrapper-social .social-icon {
+.footer .wrapper-social .social-icon {
   fill: var(--text-color-on-drk-bgrd);
 }
-
-/* ====== стилізація форми підписки ===== */
-.signup-form {
-  margin-left: auto;
-}
-
-.label-name {
+.footer .label-name {
   display: block;
   margin-bottom: 20px;
   font-weight: 700;
@@ -842,12 +848,13 @@ button {
   text-transform: uppercase;
   color: var(--text-color-on-drk-bgrd);
 }
-
-.user-email-input {
-  display: inline-block;
-  margin-right: 12px;
+.footer .user-email-input {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   height: 50px;
-  width: 358px;
+  width: 450px;
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -857,17 +864,46 @@ button {
   padding-left: 16px;
   padding-right: 16px;
 }
-.user-email-input:focus-within {
+.footer .user-email-input:focus-within {
   border: 1px solid var(--accent-color);
   outline: none;
 }
-.user-email-input::placeholder {
+.footer .user-email-input::placeholder {
   font-family: inherit;
   color: rgba(255, 255, 255, 0.6);
 }
-
-.icon-send {
+.footer .icon-send {
   margin-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    column-gap: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    justify-content: start;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .footer .wrapper-adrs {
+    margin-bottom: 0px;
+    margin-right: 70px;
+  }
+  .footer .user-email-input {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 12px;
+    width: 358px;
+  }
+  .footer .wrapper-social {
+    margin-right: auto;
+    margin-bottom: 0%;
+  }
 }
 
 /* Стилізація кнопок вибору категорії */

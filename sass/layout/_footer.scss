@@ -1,87 +1,85 @@
 .footer {
   background-color: var(--drk-bgrd-color);
   padding: 60px 0;
- 
-  // .container {
-  //   display: flex;
-  //   align-items: baseline;
-  // }
-
+  .container {
+    text-align: center;
+  }
   
   .logo {
     display: inline-block;
     margin-bottom: 20px;
   }
+  
 
   .wrapper-adrs {
-    margin-right: 70px;
+    margin-bottom: 60px;
   }
-}
-
-/* ===== стилізація адресного блоку ===== */
-
-.adrs-item{
-  &:not(:last-child) {
-    margin-bottom: 9px;
+  .wrapper-social {
+   margin-bottom: 60px; 
   }
-}
 
-.adrs-list__link {
-  font-style: normal;
-  color: var(--text-color-on-drk-bgrd);
-  transition: color var(--duration-cubic);
+  /* ===== стилізація адресного блоку ===== */
 
-  &:hover,
-  &:focus {
+  .adrs-item{
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+
+  .adrs-list__link {
+    font-style: normal;
+    color: var(--text-color-on-drk-bgrd);
+    transition: color var(--duration-cubic);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    } 
+  }
+
+
+  .adrs-list__mail {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--duration-cubic);
+
+    &:hover,
+    &:focus {
     color: var(--accent-color);
-  } 
-}
-
-
-.adrs-list__mail {
-  font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
-  transition: color var(--duration-cubic);
-
-  &:hover,
-  &:focus {
-  color: var(--accent-color);
+    }
   }
-}
 
+  .adrs-list__tel {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--duration-cubic);
 
-
-.adrs-list__tel {
-  font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
-  transition: color var(--duration-cubic);
-
-  &:hover,
-  &:focus {
-  color: var(--accent-color);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
   }
-}
 
-/* === Стилізація блока соцмереж === */
+  /* === Стилізація блока соцмереж === */
 
-.social-set-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--text-color-on-drk-bgrd);
-  margin-bottom: 20px;
-}
+  .social-set-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color-on-drk-bgrd);
+    margin-bottom: 20px;
+  }
 
-/* === Стилізація іконок соцмереж === */
+  /* === Стилізація іконок соцмереж === */
 
-.social-set {
-  display: flex;
-  gap: 10px;
-}
+  .social-set {
+    display: flex;
+    gap: 10px;
+  }
 
-.footer {
+
   .social-item__link {
     display: flex;
     justify-content: center;
@@ -92,10 +90,7 @@
     border-radius: 50%;
     transition: background-color var(--duration-cubic);
   }
-}
 
-
-.footer{
   .social-item__link{
     &:hover,
     &:focus {
@@ -119,66 +114,99 @@
   .linkedin:focus {
     background-color: #0a66c2;  
   }
-} 
 
 
-.instagram-wraper {
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-}
 
-.facebook-wraper {
-  border-radius: 50%;
-  background-image:linear-gradient(to bottom, #19aefe, #0062e0);
-}
-
-.wrapper-social {
-  .social-icon {
-    fill: var(--text-color-on-drk-bgrd);
-  }
-}
-
- /* ====== стилізація форми підписки ===== */
-
-.signup-form {
-  margin-left: auto;
-}
-
-.label-name {
-  display:block;
-  margin-bottom: 20px;
-  font-weight: 700;
-  line-height: calc(16/14);
-  text-transform: uppercase;
-  color: var(--text-color-on-drk-bgrd);
-}
-
-.user-email-input {
-  display: inline-block;
-  margin-right: 12px;
-  height: 50px;
-  width: 358px;
-  background: none;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 1.25;
-  color: var(--text-color-on-drk-bgrd);
-  padding-left: 16px;
-  padding-right: 16px;
-
-  &:focus-within {
-  border: 1px solid var(--accent-color);
-  outline: none;
+  .instagram-wraper {
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
   }
 
-  &::placeholder {
-  font-family: inherit;
-  color: rgba(255, 255, 255, 0.6);
+  .facebook-wraper {
+    border-radius: 50%;
+    background-image:linear-gradient(to bottom, #19aefe, #0062e0);
+  }
+
+  .wrapper-social {
+    .social-icon {
+      fill: var(--text-color-on-drk-bgrd);
+    }
+  }
+
+  /* ====== стилізація форми підписки ===== */
+
+  
+
+  .label-name {
+    display:block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: calc(16/14);
+    text-transform: uppercase;
+    color: var(--text-color-on-drk-bgrd);
+  }
+
+  .user-email-input {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 450px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--text-color-on-drk-bgrd);
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &:focus-within {
+    border: 1px solid var(--accent-color);
+    outline: none;
+    }
+
+    &::placeholder {
+    font-family: inherit;
+    color: rgba(255, 255, 255, 0.6);
+    }
+
+  }
+
+  .icon-send {margin-left: 10px; }
+
+  @media screen and (min-width: 768px){
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+      column-gap: 165px;
+    }
+
+  }
+  @media screen and (min-width: 1200px){
+    .container {
+      justify-content: start;
+      flex-wrap: nowrap;
+      gap: 0;
+    }
+    .wrapper-adrs {
+      margin-bottom: 0px;
+      margin-right: 70px;
+    }
+    .user-email-input {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: 12px;
+      width: 358px;
+    }
+    .wrapper-social {
+      margin-right: auto;
+      margin-bottom: 0%;
+    }
   }
 
 }
-
-.icon-send {margin-left: 10px; }
-
 
