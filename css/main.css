@@ -32,6 +32,10 @@ body {
   background-color: var(--main-bgrnd-color);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 /* Приберає зайві маржини і падінги в текстових блоках*/
 h1, h2, h3, h4, p {
   margin-top: 0;
@@ -146,10 +150,17 @@ button {
 
 .section-title {
   color: var(--secondary-text-color);
-  font-size: 36px;
-  line-height: 1.167;
   text-align: center;
-  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 1.1785714286;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.167;
+    margin-bottom: 50px;
+  }
 }
 
 /* Стилізація бекдропа модального вікна */
@@ -525,12 +536,6 @@ button {
     line-height: 1.36;
   }
 }
-@media screen and (min-width: 1200px) {
-  .benefits {
-    padding-bottom: 0px;
-  }
-}
-
 .benefits__list {
   display: flex;
   flex-wrap: wrap;
@@ -558,7 +563,7 @@ button {
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .benefits__item {
     width: calc((100% - 90px) / 4);
   }
@@ -591,12 +596,15 @@ button {
   background-image: url(../images/svg/astronaut.svg);
 }
 
-@media screen and (max-width: 1200px) {
-  .what {
-    display: none;
-  }
+.what {
+  display: none;
 }
+
 @media screen and (min-width: 1200px) {
+  .what {
+    display: block;
+    padding-top: 0;
+  }
   .what-we-do-list {
     display: flex;
     justify-content: space-between;
@@ -723,7 +731,7 @@ button {
     width: 226px;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .item-client_link {
     width: 170px;
   }
@@ -854,7 +862,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   height: 50px;
-  width: 450px;
+  width: 100%;
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -882,6 +890,9 @@ button {
     justify-content: center;
     align-items: baseline;
     column-gap: 165px;
+  }
+  .footer .user-email-input {
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -984,7 +995,19 @@ button {
   color: var(--text-color-on-drk-bgrd);
   font-size: 18px;
   line-height: 1.56;
-  padding: 63px 24px;
+  padding: 77px 24px;
+}
+@media screen and (min-width: 768px) {
+  .overlay-text {
+    padding-top: 49px;
+    padding-bottom: 77px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay-text {
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
 }
 
 .project-card_box {

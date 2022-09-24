@@ -4,8 +4,9 @@
   justify-content: center;
   gap: 30px; 
 }
+
 @media screen and (max-width:480px ) {
-.item-client {
+  .item-client {
    width: calc( ( 100% - 30px ) / 2 );
   
   }
@@ -22,7 +23,7 @@
   @media screen and (min-width:768px ) {
     width: 226px;
   }
-  @media screen and (min-width:1199px ) {
+  @media screen and (min-width:1200px ) {
     width: 170px;
   }
   height: 92px;
