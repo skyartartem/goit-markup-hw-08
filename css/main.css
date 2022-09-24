@@ -896,6 +896,9 @@ button {
   }
 }
 @media screen and (min-width: 1200px) {
+  .footer .label-name {
+    text-align: left;
+  }
   .footer .container {
     justify-content: start;
     flex-wrap: nowrap;

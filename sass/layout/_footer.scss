@@ -145,15 +145,7 @@
     text-transform: uppercase;
     color: var(--text-color-on-drk-bgrd);
   }
-//  @media screen and (max-width:479px), and (min-width:10px){
-//     // .signup-form {
-//     //   width: 100%;
-//     // }
-//     // .user-email-input {
-//     //   width: 100%;
-//     // }
-         
-//   }
+
   .user-email-input {
 
     display: block;
@@ -202,6 +194,9 @@
     }
   }
   @media screen and (min-width: 1200px){
+    .label-name {
+      text-align: left;
+    }
     .container {
       justify-content: start;
       flex-wrap: nowrap;
