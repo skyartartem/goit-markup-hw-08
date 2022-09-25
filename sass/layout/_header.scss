@@ -2,14 +2,14 @@
 
 .header { 
   border-bottom: 1px solid #ECECEC;
-  height: 80px;
+  height: 60px;
   display: flex;
   
- .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
- }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .menu-list {
     display: none;
   }
@@ -17,7 +17,7 @@
   .contact-list {
     display: none;
   }
-  .burger-btn {
+  .open-mobile-menu-btn {
     display: block;
     background: transparent;
     border: none;
@@ -36,7 +36,7 @@
   }
 
   @media screen and (min-width: 768px){
-    .burger-btn {
+    .open-mobile-menu-btn {
       display: none;
     }
 
@@ -76,8 +76,8 @@
     .menu-list__link {
       position: relative;
       display: block;
-      padding-top: 32px;
-      padding-bottom: 32px;
+      padding-top: 22px;
+      padding-bottom: 22px;
       font-weight: 500;
       line-height: 1.14;
       letter-spacing: 0.02em;
@@ -139,6 +139,12 @@
   }
 
   @media screen and (min-width: 1200px){
+    height: 80px;
+    .menu-list__link {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  
     .contact-list {
       display: flex;
       .contact-list__item:not(:last-child) {
