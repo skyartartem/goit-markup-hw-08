@@ -8,7 +8,8 @@
   refs.openMenuBtn.addEventListener('click', toggleModal);
   refs.closeMenuBtn.addEventListener('click', toggleModal);
 
-  function toggleModal() {
+    function toggleModal() {
+    document.body.classList.toggle('modal-open'); 
     refs.menu.classList.toggle('is-open');
   }
 })();

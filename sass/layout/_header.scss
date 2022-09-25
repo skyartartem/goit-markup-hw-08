@@ -22,17 +22,17 @@
     background: transparent;
     border: none;
     padding: 0;
-   
+    &:hover .burger-icon,
+    &:focus .burger-icon {
+      fill: var(--accent-color);
+    }
   }
   .burger-icon {
     display: block;
     width: 40px;
     height: 40px;
     transition: fill var(--duration-cubic);
-    &:hover,
-    &:focus {
-      fill: var(--accent-color);
-    }
+    
   }
 
   @media screen and (min-width: 768px){
