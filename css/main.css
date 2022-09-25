@@ -1159,6 +1159,7 @@ button {
     gap: 0;
   }
   .footer .wrapper-adrs {
+    text-align: left;
     margin-bottom: 0px;
     margin-right: 70px;
   }
