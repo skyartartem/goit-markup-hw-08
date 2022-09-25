@@ -64,7 +64,9 @@
 }
 
 .project-card_link {
-  display: block;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   border-radius: 0px 0px 4px 4px;
   transition: box-shadow var(--duration-cubic);
   &:hover,
@@ -115,7 +117,7 @@
   border-bottom: 1px solid var(--cards-border-color);
   padding: 20px 24px;
   border-radius: 0px 0px 4px 4px; 
-  
+  flex-grow: 1;
 }
 
 .name-project {
