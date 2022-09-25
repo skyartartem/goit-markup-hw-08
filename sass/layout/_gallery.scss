@@ -54,10 +54,6 @@
 }
 
 
-// .project-card {
-//   margin: 15px;
-// }
-
 .img-project {
   position: relative;
   overflow: hidden;
@@ -110,7 +106,6 @@
   }
 }
 
-
 .project-card_box {
   border-left: 1px solid var(--cards-border-color);
   border-right: 1px solid var(--cards-border-color);
@@ -121,10 +116,10 @@
 }
 
 .name-project {
-  max-width: 304px;
-  @media screen and (max-width: 768px), (min-width: 1200px){
-    max-width: 322px;
-  }  
+  // max-width: 304px;
+  // @media screen and (max-width: 768px), (min-width: 1200px){
+  //   max-width: 322px;
+  // }  
  
   color: var(--secondary-text-color);
   font-weight: 700;
