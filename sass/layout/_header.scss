@@ -117,7 +117,8 @@
       align-items: center;
       gap: 10px;
       font-weight: 500;
-      line-height: 1.14;
+      font-size: 12px;
+      line-height: calc(14/12);
       letter-spacing: 0.02em;
       color: var(--primary-text-color);
       transition: color var(--duration-cubic), 
@@ -154,5 +155,9 @@
     .logo {
       margin-right: 93px;
     } 
+    .header-contact {
+      font-size: 14px;
+      line-height: calc(16/14)
+    }
   }
 }

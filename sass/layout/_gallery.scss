@@ -20,10 +20,11 @@
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   background-color: #f5f4fa;
   border-radius: 4px;
-  padding: 6px 22px;
+  padding: 6px 24px;
 
   transition: color var(--duration-cubic),
     background-color var(--duration-cubic), 
@@ -54,11 +55,6 @@
 }
 
 
-.img-project {
-  position: relative;
-  overflow: hidden;
-}
-
 .project-card_link {
   height: 100%;
   display: flex;
@@ -76,7 +72,18 @@
   } 
 }
 
+.img-project {
+  position: relative;
+  overflow: hidden;
+  
+}
 
+.project-picture{
+    @media screen and (max-width: 480px){
+    max-width: 100%;
+    height: auto;
+  }  
+}
 
 .hoverer-overlay {
   position: absolute;
@@ -93,9 +100,14 @@
 .overlay-text {
   display: block;
   color: var(--text-color-on-drk-bgrd);
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 20px 15px;
+  @media screen and (min-width: 480px){
   font-size: 18px;
   line-height: 1.56;
   padding: 77px 24px;
+  }
   @media screen and (min-width: 768px){
    padding-top: 49px;
    padding-bottom: 77px; 
@@ -116,10 +128,10 @@
 }
 
 .name-project {
-  // max-width: 304px;
-  // @media screen and (max-width: 768px), (min-width: 1200px){
-  //   max-width: 322px;
-  // }  
+  max-width: 304px;
+  @media screen and (max-width: 768px), (min-width: 1200px){
+    max-width: 322px;
+  }  
  
   color: var(--secondary-text-color);
   font-weight: 700;

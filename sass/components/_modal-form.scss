@@ -2,16 +2,26 @@
 
 
 .modal-form {
-  width: 528px;
-  padding: 40px;
-  @media screen and (max-width: 1200px) {
-    width: 450px;
+  max-width: 100%;
+  padding: 40px 20px;
     .user-confirm {
       font-size: 12px;
       line-height: calc(14/12);
     }
+
+  @media screen and (min-width: 450px) {
+    width: 450px;
+    padding: 40px;
+    
   }
-  
+  @media screen and (min-width: 1200px){
+    width: 528px;
+    padding: 40px;
+    .user-confirm {
+      font-size: 14px;
+      line-height: calc(24/14);
+    }
+  }
 
 
   .modal-form-title {
@@ -118,26 +128,34 @@
   }
 
   .custom-check {
-    width: 16px;
+    min-width: 15px;
     height: 15px;
     border: 2px solid rgb(33 33 33);
     border-radius: 2px;
     margin-right: 8px;
 
-    .check-box:checked + & {
-      background-color: var(--accent-color);
-      border: none;
-    }
+    // .check-box:checked + & {
+    //   background-color: var(--accent-color);
+    //   border: none;
+    // }
 
-    .check-box:focus + & {
-      border-color: var(--accent-color);
-    }
+    // .check-box:focus + & {
+    //   border-color: var(--accent-color);
+    // }
   }
-
 
   .send-form-button{
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.check-box:checked + .custom-check {
+    background-color: var(--accent-color);
+      border: none;
+}
+
+.check-box:focus + .custom-check {
+  border-color: var(--accent-color);
 }

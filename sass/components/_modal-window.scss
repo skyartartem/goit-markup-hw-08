@@ -1,6 +1,11 @@
 /* Стилізація модального вікна */
 
 .modal-window {
+  @media screen and (max-width: 450px){
+    width: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   position: absolute;
   left: 50%;
   top: 50%;
