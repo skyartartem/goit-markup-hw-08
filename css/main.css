@@ -1032,7 +1032,6 @@ button {
 }
 
 .name-project {
-  max-width: 304px;
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -1040,9 +1039,9 @@ button {
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
-@media screen and (max-width: 768px), (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .name-project {
-    max-width: 322px;
+    max-width: 304px;
   }
 }
 

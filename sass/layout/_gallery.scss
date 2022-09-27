@@ -128,11 +128,13 @@
 }
 
 .name-project {
-  max-width: 304px;
-  @media screen and (max-width: 768px), (min-width: 1200px){
-    max-width: 322px;
+  // max-width: 322px;
+  @media screen and (min-width: 768px) and (max-width:1200px){
+    max-width: 304px;
   }  
- 
+  
+
+
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 18px;
