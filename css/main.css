@@ -162,6 +162,11 @@ button {
   overflow-y: scroll;
   transition: opacity var(--duration-cubic), visibility var(--duration-cubic);
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 
 .mobile-menu.is-open {
   opacity: 1;
@@ -637,7 +642,6 @@ button {
   padding-bottom: 118px;
   background-color: var(--drk-bgrd-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgrnd-img-480.jpg);
-  max-width: 480px;
   margin: 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
@@ -653,13 +657,11 @@ button {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgrnd-img-768.jpg);
-    max-width: 768px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgrnd-img-768@2x.jpg);
-    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -921,7 +923,7 @@ button {
   row-gap: 15px;
   column-gap: 8px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .set-categories {
     justify-content: flex-start;
   }
